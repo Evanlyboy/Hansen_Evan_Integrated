@@ -1,0 +1,102 @@
+<!--
+Evan's Computer Shop
+A final intergrated project website for Interactive Media Development 3D Visualization
+By: Evan Hansen
+
+> Usually my projects are a lot more ambitious than what I have here but I only have a limited tool set to create as of right now and I didn't want it to be too confusing 
+with features and plans I want to implement. So here is my basic but hopefully unique and interesting website
+
+----------------------------------------------------------------------------------------------
+> This is the index page where I have other, theorhetical links to other parts of the website. It has some short ads, and shows what's on offer
+-->
+
+<!--Document Setup Stuff-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan's Computer Shop - Welcome</title>
+    <audio controls autoplay name="music" loop>
+    <source src="assets/ECS_Music.mp3" type="audio/mp3">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    </audio>
+</head>
+
+<!--The actual body of the website-->
+<body>
+    <h1 class="hidden">Welcome</h1>
+    <a class="hidden" href="#content">Skip to content</a>
+    <!--The header containing the navigation-->
+    <!--Navigation Start-->
+    <header>
+        <nav aria-label="navigation">
+            <h3>Evan's Computer Shop</h3>
+            <ul>
+                <li><h4>Main Page</h4></li>
+                <li><h4>Desktop PC</h4></li> 
+                <li><h4>Parts and Peripherals</h4></li> 
+            </ul>
+            <img src="images/ECS_logo_smol.png" alt="The ECS Logo. It's a purple/orange cube with a black hole in the center sucking in the letters E, C, and S">
+        </nav>
+    </header>
+    <!--Navigation End-->
+
+    <main id="content">
+        <!--Introducing the website and what it's all about-->
+        <section>
+            <h3 class="hidden">Website Introduction</h3>
+                <!--These photos haven't been taken yet so forgive the placeholder names-->
+            <img src="images/coolDesktop_1.jpg" alt="A photo of a desktop PC">
+            <img src="images/coolDesktop_2.jpg" alt="Another photo of a desktop PC">
+            <p>
+            Welcome to Evan's Computer Shop: serving smiling faces since 2021! Enjoy our limited selection of high quality goods and services.
+            </p>
+        </section>
+
+        <!--Six Boxes with pictures in them-->
+        <section>
+            <h3 class="hidden">IT Services</h3>
+            <img src="images/product_P1B1.jpg" alt="Photo of a product in box 1">
+            <img src="images/product_P1B2.jpg" alt="Photo of a product in box 2">
+            <img src="images/product_P1B3.jpg" alt="Photo of a product in box 3">
+            <br><br>
+            <img src="images/product_P1B4.jpg" alt="Photo of a product in box 4">
+            <img src="images/product_P1B5.jpg" alt="Photo of a product in box 5">
+            <img src="images/product_P1B6.jpg" alt="Photo of a product in box 6">
+        </section>
+        <!--End of six boxes-->
+        <!--Laptop section cause laptops are cool-->
+        <section>
+            <h3 class="hidden">Laptops and Hardware</h3>
+            <img src="images/laptop.jpg" alt="Photo of a laptop">
+            <p> Hello here are our wonderful laptops to suit your every need. We have business and g a m e r </p>
+            <img src="images/laptop_buisness" alt="A photo of a typical buisness laptop. Think Ideapad">
+            <img src="images/laptop_gamer" alt="A photo of a typical gamer laptop. Think red lights and obtuse logos">
+        </section>
+    </main>
+</body>
+
+<!--Here is the footer of the website-->
+<!--The validator says this footer is a stray but as you can see it isn't-->
+<footer>
+    <section>
+        <h2 class="hidden">ECS Site Footer</h2>
+        <h3 class="hidden">Shop Address</h3>
+        <h3>Evan's Computer Shop</h3>
+        <p>
+            Evan's Computer Shop (Inc.)<br>
+            077 White Pine Mall, London, ON
+        </p>
+        <h3 class="hidden">Contact Information</h3>
+        <p>
+            They call me Evan, but you can call me anytime | +1 555 8356<br>
+            Or email, I check that too | evan@computershop.ca
+        </p>
+        <p>
+            Privacy Policy Schmivacy Dolicy
+        </p>
+    </section>
+</footer>
+</html>

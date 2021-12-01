@@ -10,6 +10,20 @@ Tags: Learning CSS
   Fonts
 -------------- */
 
+@font-face {
+  font-family: Transformers;
+  src: url(../assets/Transformers.ttf);
+}
+
+.reg-text{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
 /* ------------ */
 
 /* -------------
@@ -60,6 +74,13 @@ ___________________________________________ */
       font-family: Trebuchet MS;
       font-size: 16px;  
     }
+
+    .fas {
+      margin-right: .5em;
+      margin-left: .5em;
+      font-size: 1em;
+      color: #010101; 
+   }
 
 /* _____________________________________
 
@@ -117,18 +138,34 @@ ___________________________________________ */
    header {
     position: sticky;
     top: 0em;
-    background-color: white;
+    background-color: #220F2F;
     border-bottom: 1px solid lightgray;
     box-shadow: 0px 5px 8px #888;
     }
 
     .logo {
-        grid-column: 1 / span 1;
+      grid-column: 1 / span 1;
     }
 
     .logo img {
-        padding: 1em;
-        width: 25%;
+      display: inline;
+      margin-top: 1.5em;
+      margin-bottom: 1em;
+      margin-right: 1em;
+      margin-left: 1em;
+      max-width: 20%;
+      height: auto; 
+      float: right;
+    }
+
+    .logo h3 {
+      display: inline;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      font-family: "Transformers";
+      font-size: 8em;
+      align-self: auto;
+      margin-left: 1em;
     }
 
     /*------------ Start Nav Styling ------------*/
@@ -140,13 +177,18 @@ ___________________________________________ */
         padding-top: 1.5em;
         margin: 0;
         background-color: #220F2F;
+        font-family: Lexend;
+        font-weight: 500;
+        font-size: 2.5em;
      }
 
      nav ul {
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        text-align: end;
+      margin-top: 0em;
+      margin-left: 1em;
+      margin-bottom: 1em;
+      padding: 0;
+      text-decoration: none;
+      text-align: end;
      }
 
      nav li {
@@ -161,12 +203,15 @@ ___________________________________________ */
      }
 
      nav li a:hover {
-        padding-bottom: .5em;
-        border-bottom: 3px solid #9a2018;  
+        /* padding-bottom: .5em;
+        border-bottom: 3px solid #9a2018;   */
      }
 
      nav li a.active {
-        padding-bottom: .5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 1em;
+        padding-right: 1em;
         background-color: #180A21; 
      }
 
@@ -188,8 +233,37 @@ ___________________________________________ */
         -webkit-transition: background-color 500ms linear;
         -ms-transition: background-color 500ms linear;
         transition: background-color 500ms linear;
-
      }
+
+     /*------------- Subheader ------------*/
+     .nav-sub {
+      grid-column: 1 / span 4;
+      padding-top: 1em;
+      margin: 0;
+      background-color: #211926;
+      font-family: Lexend;
+      font-weight: 200;
+      font-size: 2em;
+     }
+
+     .nav-sub ul {
+      float: left;
+      margin-top: 0em;
+      margin-left: 1em;
+      margin-bottom: 1em;
+      padding: 0;
+      text-decoration: none;
+      text-align: justify;
+   }
+
+   .search {
+    grid-column: 4 / span 1;
+    border-radius: 25px;
+    float: right;
+    background: #e8e6f0;
+    width: 8em;
+   }
+     
 
      /*------------- End Site Header ------------*/
 

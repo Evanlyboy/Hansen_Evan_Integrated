@@ -17,11 +17,9 @@ Tags: Learning CSS
 
 .reg-text{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 18px;
-  margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  font-size: 24px;
   text-align: center;
+  vertical-align: middle;
 }
 
 /* ------------ */
@@ -82,6 +80,12 @@ ___________________________________________ */
       color: #010101; 
    }
 
+   span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+  }
+
 /* _____________________________________
 
    02. CSS Grid
@@ -139,8 +143,8 @@ ___________________________________________ */
     position: sticky;
     top: 0em;
     background-color: #220F2F;
-    border-bottom: 1px solid lightgray;
-    box-shadow: 0px 5px 8px #888;
+    border-bottom: 1px solid #220F2F;
+    box-shadow: 0px 5px 8px #010101;
     }
 
     .logo {
@@ -172,7 +176,7 @@ ___________________________________________ */
 
       /* This is very nice */
 
-      .nav {
+    .nav {
         grid-column: 2 / span 3;
         padding-top: 1.5em;
         margin: 0;
@@ -201,11 +205,11 @@ ___________________________________________ */
         color: #FDFFFC;
         font-size: inherit;
      }
-
+/* 
      nav li a:hover {
-        /* padding-bottom: .5em;
-        border-bottom: 3px solid #9a2018;   */
-     }
+        padding-bottom: .5em;
+        border-bottom: 3px solid #9a2018;
+     } */
 
      nav li a.active {
         padding-top: 2em;
@@ -215,7 +219,7 @@ ___________________________________________ */
         background-color: #180A21; 
      }
 
-     nav li h3 {
+     /* nav li h3 {
         display: inline;
         padding: 1.5em 1.5em 1.86em;
         background-color: #9a2018;
@@ -226,7 +230,7 @@ ___________________________________________ */
         -ms-transition: background-color 500ms linear;
         transition: background-color 500ms linear;
 
-     }
+     } */
 
      nav li h3:hover {
         background-color: #626262;
@@ -258,10 +262,11 @@ ___________________________________________ */
 
    .search {
     grid-column: 4 / span 1;
-    border-radius: 25px;
-    float: right;
+    border-radius: 10px;
+    float: left;
     background: #e8e6f0;
-    width: 8em;
+    width: 12em;
+    vertical-align: middle;
    }
      
 

@@ -62,16 +62,39 @@ with features and plans I want to implement. So here is my basic but hopefully u
     <!--Navigation End-->
 
     <main id="content">
-            <!--The hero image of this page-->
         <section>
-            <h3 class="hidden">Desktop PC</h3>
-            <img src="images/coolDesktop_3.jpeg" alt="A photo of a desktop PC">
-            <h3>Build your own desktop PC</h3>
+            <h2 class="hidden">Desktop PC</h2>
+            <div class="hero-container hero-margin">
+                <div class="hero-assigner">
+                    <div class="span-img">
+                        <img class="round-pics left-image" src="images/coolDesktop_3.jpg" alt="A photo of a desktop PC">
+                        <div class="hero-text">
+                            <h4>Desktop PC</h4>
+                            <h5>How to build your own killer rig</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="hidden">PC Parts</h2>
+            <div class="hero-container hero-margin">
+                <div class="hero-assigner">
+                    <div class="span-img">
+                        <img class="round-pics left-image" src="images/computer_overview.jpg" alt="A photo of a desktop PC">
+                        <div class="hero-text">
+                            <h4>PC Parts</h4>
+                            <h5>Everything you need to start your journey</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--Describing parts and such-->
         <section>
-            <h3 class="hidden">Part List Start</h3>
+            <h2 class="hidden">Part List Start</h2>
             <img src="images/stockBuild.jpeg" alt="A stock photo of somebody putting together a desktop PC. He is happy. He is living life. This is his moment">
 
             <img src="images/cpu.jpg" alt="a picture of a computer CPU. It is square and made of metal and silicon">
@@ -90,36 +113,34 @@ with features and plans I want to implement. So here is my basic but hopefully u
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque consectetur dolor tempore, aspernatur voluptatibus eius? Aperiam quia laboriosam debitis iste soluta adipisci id maiores eveniet nostrum consectetur. Eos, sequi fugiat.</p>
         </section>
     </main>
+     <!--Here is the footer of the website-->
+    <!--The validator says this footer is a stray but as you can see it isn't-->
+    <footer class="footer">
+        <section>
+            <h2 class="hidden">ECS Site Footer</h2>
+            <div class="two-items">
+                <div class="two-items-vert left-foot">
+                    <div class="sub-header footer-box">
+                        <p class="follow">Follow us online</p>
+                    </div>
+                    <div class="socials four-items">
+                        <img src="images/facebook.png" alt="facebook">
+                        <img src="images/instagram.png" alt="instagram">
+                        <img src="images/twitter.png" alt="twitter">
+                        <img src="images/discord.png" alt="discord">
+                    </div>
+                </div>
+                <div class="two-items-vert right-foot">
+                    <p class="sub-header footer-box">Get the latest news from our <br>newsletter!</p>
+                    <div class="">
+                        <input type="text" name="email" placeholder="Email Address" class="email">
+                        <button type="button" class="button">
+                                SIGN UP
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
-<!--Ok actually that wasn't so bad after all-->
-<!--Footer-->
-<footer class="footer">
-    <section>
-        <h2 class="hidden">ECS Site Footer</h2>
-        <div class="two-items">
-            <div class="two-items-vert left-foot">
-                <div class="sub-header footer-box">
-                    <p class="follow">Follow us online</p>
-                </div>
-                <div class="socials four-items">
-                    <img src="images/facebook.png" alt="facebook">
-                    <img src="images/instagram.png" alt="instagram">
-                    <img src="images/twitter.png" alt="twitter">
-                    <img src="images/discord.png" alt="discord">
-                </div>
-            </div>
-            <div class="two-items-vert right-foot">
-                <p class="sub-header footer-box">Get the latest news from our <br>newsletter!</p>
-                <div class="">
-                    <input type="text" name="email" placeholder="Email Address" class="email">
-                    <button type="button" class="button">
-                        <p class="send">
-                            SIGN UP
-                        </p>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
 </html>

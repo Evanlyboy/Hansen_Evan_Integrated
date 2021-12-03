@@ -4,6 +4,8 @@ Description: Class File
 Author: Evan Hansen 
 Version: 1.0
 Tags: Learning CSS
+
+This is a big ol mess
 */
 
 /* -------------
@@ -71,9 +73,13 @@ ___________________________________________ */
 /* 01. General Styles  
     - Hero Image
       - Left Hero
-      - Right Hero                      
+      - Right Hero   
+      - Welcome
+      - Intro                   
    02. CSS Grid  
    03. Site Header
+      - Nav Styling
+      - Subheader
       - Site Footer
    04. Hero               
 /* _____________________________________
@@ -92,14 +98,12 @@ ___________________________________________ */
     font-family: "Lexend", sans-serif, px;
   }
 
-
   body {
     margin: 0;
     padding: 0;
     font-family: Trebuchet MS;
     font-size: 16px;  
   }
-
 
   span {
     display: inline-block;
@@ -114,6 +118,22 @@ ___________________________________________ */
   .margin-2 {
     margin: 2em auto;
     max-width: fit-content;
+  }
+
+  .hero-margin {
+    margin: auto auto 10em auto;
+    max-width: fit-content;
+  }
+
+  .image-block {
+    display: grid;
+    grid-column: span 1;
+    max-width: fit-content;
+  }
+
+  .image-block img{
+    display: block;
+    margin: 0 auto;
   }
 
 
@@ -133,7 +153,7 @@ ___________________________________________ */
   display: grid;
   grid-column: 2 / span 2;
   grid-template-columns: repeat(2, 1fr);
-  max-height: 704px;
+  /* max-height: 704px; */
   overflow: hidden;
 }
 
@@ -141,7 +161,7 @@ ___________________________________________ */
   display: grid;
   grid-column: 1 / span 2;
   grid-template-columns: repeat(1, 1fr);
-  max-height: 704px;
+  /* max-height: 704px; */
   overflow: hidden;
 }
 
@@ -185,7 +205,7 @@ ___________________________________________ */
 }
 
 /* -------------- Left Hero -------------- */
-.left-hero {
+.hero-assigner {
   grid-column: 1;
   display: grid;
 }
@@ -274,6 +294,7 @@ ___________________________________________ */
   margin-block-end: 0em;
 }
 
+/* -------------- Welcome -------------- */
 .welcome {
   display: grid;
   background-color: #F9E26E;
@@ -327,6 +348,8 @@ ___________________________________________ */
   margin-top: .5em;
   margin-bottom: .5em;
 }
+
+/* -------------- Intro -------------- */
 
 .intro {
   display: grid;
@@ -457,8 +480,6 @@ ___________________________________________ */
       column-gap: 2em;
    }
 
-    /* -------------- End Grid Items -------------- */
-
     /* _____________________________________
 
    03. Site Header
@@ -511,8 +532,6 @@ ___________________________________________ */
    }
 
     /*------------ Start Nav Styling ------------*/
-
-      /* This is very nice */
 
     .nav {
         grid-column: 2 / span 3;
@@ -580,64 +599,59 @@ ___________________________________________ */
       text-align: justify;
    }
 
-   .search {
-    grid-column: 4 / span 1;
-    border-radius: 10px;
-    float: left;
-    background: #e8e6f0;
-    width: 12em;
-    vertical-align: middle;
-   }
+    .search {
+      grid-column: 4 / span 1;
+      border-radius: 10px;
+      float: left;
+      background: #e8e6f0;
+      width: 12em;
+      vertical-align: middle;
+    }
 
-   .search-icon {
-     background-color: #fff;
-   }
+    .search-icon {
+      background-color: #fff;
+    }
 
-   input[type=text].icon {
-    width: 15%;
-    padding: 12px 25px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c6/Search_font_awesome.svg");
-    background-size: 10%;
-    background-position: 10px 8px;
-    background-repeat: no-repeat;
-    padding-left: 48px;
-  }
+    input[type=text].icon {
+      width: 15%;
+      padding: 12px 25px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c6/Search_font_awesome.svg");
+      background-size: 10%;
+      background-position: 10px 8px;
+      background-repeat: no-repeat;
+      padding-left: 48px;
+    }
 
-  input[type=text].email {
-    width: 70%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 24px;
-    background-color: white;
-    padding-left: 42px;
-  }
+    input[type=text].email {
+      width: 70%;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 24px;
+      background-color: white;
+      padding-left: 42px;
+    }
 
-  .send  {
-    color: #170A1E;
-    text-align: center;
-    font-family: Lexend;
-    font-size: 24px;
-    font-weight: 400;
-    margin: auto;
-  }
+    .button {
+      background-color: #F9E26E;
+      padding: .5em 1.5em;
+      border-style: none;
+      border-radius: 10px;
+      color: #170A1E;
+      text-align: center;
+      font-family: Lexend;
+      font-size: 24px;
+      font-weight: 400;
+      margin: auto .5em;
+    }
 
-  .button {
-    background-color: #F9E26E;
-    padding: 1em 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-style: none;
-    border-radius: 20px;
-  }
-
-  .button:active {
-    background-color: #948955;
-  }
+    .button:active {
+      background-color: #948955;
+    }
 
     /* -------------- Footer -------------- */
 
@@ -736,14 +750,4 @@ ___________________________________________ */
    04. IT Services
    _____________________________________ */
 
-   .image-block {
-     display: grid;
-     grid-column: span 1;
-     max-width: fit-content;
-   }
-
-   .image-block img{
-     display: block;
-     margin: 0 auto;
-   }
   }

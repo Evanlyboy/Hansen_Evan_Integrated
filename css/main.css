@@ -29,6 +29,18 @@ Tags: Learning CSS
   text-align: center;
 }
 
+.image-header  {
+  font-family: Lexend;
+  font-size: 62px;
+  font-weight: 800;
+}
+
+.image-subheader {
+  font-family: Lexend;
+  font-size: 30px;
+  font-weight: 200;
+}
+
 /* ------------ */
 
 /* -------------
@@ -69,9 +81,6 @@ ___________________________________________ */
       font-family: "Lexend", sans-serif, px;
     }
 
-    /* section {
-      margin: 3rem 0;
-    } */
   
     body {
       margin: 0;
@@ -87,11 +96,102 @@ ___________________________________________ */
       color: #010101; 
    }
 
-   span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-  }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+
+
+
+/* -------------- Hero Image things -------------- */
+
+.round-pics{
+  border-radius: 12px;
+}
+
+/* -------------- Left Hero -------------- */
+
+.hero-container {
+  display: grid;
+  grid: 150px / auto auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1;
+}
+
+.left-hero {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+
+.hero-img-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.hero-text-left {
+  grid-column: 4;
+  grid-row: 2;
+  align-self: flex-end;
+  justify-self: start;
+  margin-left: 6em;
+  margin-bottom: 3em;
+  font-family: Lexend;
+}
+
+.hero-text-left h4 {
+  padding: .2em .5em .2em .5em;
+  margin-bottom: 0em;
+  border-radius: 5px;
+  font-size: 3em;
+  font-weight: 800;
+  background-color: #220E33;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.hero-text-left h5 {
+  padding: .2em .5em .2em .5em;
+  border-radius: 5px;
+  margin-bottom: 3em;
+  font-size: 1em;
+  font-weight: 200;
+  background-color: #1C0C26;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+/* -------------- Right Hero -------------- */
+.right-hero {
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.hero-img-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.hero-text-right {
+  grid-column: 4;
+  grid-row: 2;
+  align-self: flex-end;
+  justify-self: start;
+  margin-right: 6em;
+  margin-bottom: 3em;
+  font-family: Lexend;
+}
 
 /* _____________________________________
 
@@ -313,7 +413,38 @@ ___________________________________________ */
     background-repeat: no-repeat;
     padding-left: 42px;
   }
-     
+
+  input[type=text].email {
+    width: 70%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 24px;
+    background-color: white;
+    padding-left: 42px;
+  }
+
+  .send  {
+    color: #170A1E;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 24px;
+    font-weight: 400;
+    margin: auto;
+  }
+
+  .button {
+    background-color: #F9E26E;
+    padding: 1em 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-style: none;
+    border-radius: 20px;
+  }
+
+  .button:active {
+    background-color: #948955;
+  }
 
      /*------------- End Site Header ------------*/
 

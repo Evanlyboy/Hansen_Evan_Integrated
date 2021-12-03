@@ -285,6 +285,17 @@ ___________________________________________ */
   border-radius: 20px;
 }
 
+.welcome-long {
+  display: grid;
+  background-color: #F9E26E;
+  color: #1C0D24;
+  justify-self: center;
+  margin: 3em auto;
+  max-width: 1600px;
+  text-align: center;
+  border-radius: 10px;
+}
+
 .welcome h3 {
   font-family: Lexend;
   font-size: 3em;
@@ -305,6 +316,14 @@ ___________________________________________ */
   font-family: Lexend;
   font-size: 1em;
   font-weight: 400;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.welcome-long h4 {
+  font-family: Lexend;
+  font-size: 2.5em;
+  font-weight: 600;
   margin-top: .5em;
   margin-bottom: .5em;
 }
@@ -427,7 +446,6 @@ ___________________________________________ */
        justify-content: space-evenly;
        row-gap: 2em;
        column-gap: 2em;
-       /* grid-row: 1 / span 3; */
     }
 
     .four-items {

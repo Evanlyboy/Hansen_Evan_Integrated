@@ -188,7 +188,7 @@ ___________________________________________ */
 }
 
 .hero-text h4 {
-  padding: .2em 3em .2em .1em;
+  padding: .2em 3em .2em .3em;
   margin-bottom: 0em;
   border-radius: 5px 5px 0px 0px;
   font-size: 5em;
@@ -199,7 +199,7 @@ ___________________________________________ */
 }
 
 .hero-text h5 {
-  padding: .2em .5em .2em .5em;
+  padding: .2em .5em .2em .9em;
   border-radius: 0px 0px 5px 5px;
   margin-bottom: 3em;
   font-size: 2em;
@@ -569,10 +569,7 @@ ___________________________________________ */
      }
 
      nav li a.active {
-        padding-top: 2em;
-        padding-bottom: 2em;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding: 2em .5em;
         background-color: #180A21; 
      }
 
@@ -586,7 +583,7 @@ ___________________________________________ */
      /*------------- Subheader ------------*/
      .nav-sub {
       grid-column: 1 / span 4;
-      padding-top: 1em;
+      padding: .5em;
       margin: 0;
       background-color: #211926;
       font-family: Lexend;
@@ -598,10 +595,11 @@ ___________________________________________ */
       float: left;
       margin-top: 0em;
       margin-left: 1em;
-      margin-bottom: 1em;
       padding: 0;
       text-decoration: none;
       text-align: justify;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
    }
 
     .search {

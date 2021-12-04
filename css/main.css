@@ -136,6 +136,11 @@ ___________________________________________ */
     margin: 0 auto;
   }
 
+  .common-box {
+    margin: 2em;
+    padding: 2em;
+  }
+
 
 
 /* -------------- Hero Image things -------------- */
@@ -636,6 +641,16 @@ ___________________________________________ */
       padding-left: 42px;
     }
 
+    input[type=text].pc-form {
+      padding: 6px 10px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 1em;
+      background-color: white;
+      padding-left: 2em;
+      margin: 1em 0em;
+    }
+
     .button {
       background-color: #F9E26E;
       padding: .5em 1.5em;
@@ -752,9 +767,34 @@ ___________________________________________ */
 
     .pb-text {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-size: 2.3em;
+      font-size: 2.1em;
     }
 
+    .pb-text-smol {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.9em;
+    }
+
+    .pb-border {
+      margin: auto 2em;
+    }
+
+    .image-justify {
+      justify-self: left;
+      margin: 4em;
+    }
+
+    .image-right {
+      display: grid;
+      grid-column: 4;
+    }
+
+    .image-size {
+      max-width: 70%;
+      height: auto;
+    }
+
+     /* -------------- Right Part Box -------------- */
     .right-part-box {
       display: grid;
       grid-column: 2 / span 3;
@@ -786,14 +826,85 @@ ___________________________________________ */
       padding-right: 1em;
     }
 
-    .image-justify {
-      justify-self: left;
-      margin: 4em;
+     /* -------------- Left Part Box -------------- */
+
+     .left-part-box {
+      display: grid;
+      grid-column: 1 / span 3;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row: 1;
+      margin: 2em;
+      padding: 2em;
+      background-color: #402d7f;
+      justify-self: auto;
     }
 
-    .image-size {
-      max-width: 70%;
-      height: auto;
+    .left-text-lpb {
+      grid-column: 1;
+      grid-row: 1;
+      margin: 0 .5em;
+    }
+
+    .left-text-lpb li {
+      padding-bottom: .7em;
+      color: #f6e27f;
+      text-decoration: underline;
+    }
+
+    .left-text-lpb a {
+      color: #f6e27f;
+    }
+
+    .right-text-lpb {
+      grid-column: 2;
+      border-left: .2em solid black;
+      padding-left: 1em;
+    }
+
+    /* -------------- PC Complete -------------- */
+
+    .pc-header {
+      display: grid;
+      grid-column: 1 / span 2;
+      border-bottom: .2em solid black;
+      margin: .2em 2em auto;
+      max-height: 150px;
+    }
+
+    .pc-left {
+      display: grid;
+      grid-column: 1;
+      grid-row: 2;
+      border-right: .2em solid black;
+      padding: 1em;
+    }
+
+    .pc-left li {
+      padding-bottom: .7em;
+    }
+
+    .pc-right {
+      display: grid;
+      grid-column: 2;
+      grid-row: 2;
+      margin: 1em 5em 0em .5em;
+    }
+
+    .pc-right h3 {
+      font-family: Lexend;
+      font-weight: 500;
+      font-size: 4em;
+      text-align: center;
+      margin: auto;
+    }
+
+    .pc-right p {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .span-three {
+      grid-column: 2 / span 3;
     }
 
   }

@@ -747,7 +747,53 @@ ___________________________________________ */
 
     /* _____________________________________
 
-   04. IT Services
+   04. Parts
    _____________________________________ */
+
+    .pb-text {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 2.3em;
+    }
+
+    .right-part-box {
+      display: grid;
+      grid-column: 2 / span 3;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 2em;
+      padding: 2em;
+      background-color: #402d7f;
+      justify-self: auto;
+    }
+
+    .right-text-rpb {
+      grid-column: 2;
+      margin: 0 .5em;
+    }
+
+    .right-text-rpb li {
+      padding-bottom: .7em;
+      color: #f6e27f;
+      text-decoration: underline;
+    }
+
+    .right-text-rpb a {
+      color: #f6e27f;
+    }
+
+    .left-text-rpb {
+      grid-column: 1;
+      border-right: .2em solid black;
+      padding-right: 1em;
+    }
+
+    .image-justify {
+      justify-self: left;
+      margin: 4em;
+    }
+
+    .image-size {
+      max-width: 70%;
+      height: auto;
+    }
 
   }

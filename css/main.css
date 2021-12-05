@@ -43,9 +43,38 @@ This is a big ol mess
   font-weight: 200;
 }
 
-.lexend-medium{
+.lex-200 {
+  font-family: Lexend;
+  font-weight: 200;
+}
+
+.lex-300 {
+  font-family: Lexend;
+  font-weight: 300;
+}
+.lex-400 {
+  font-family: Lexend;
+  font-weight: 400;
+}
+
+.lex-500{
   font-family: Lexend;
   font-weight: 500;
+}
+
+.lex-600{
+  font-family: Lexend;
+  font-weight: 600;
+}
+
+.lex-700{
+  font-family: Lexend;
+  font-weight: 700;
+}
+
+.lex-800{
+  font-family: Lexend;
+  font-weight: 800;
 }
 
 /* ------------ */
@@ -216,7 +245,6 @@ ___________________________________________ */
   margin-bottom: 0em;
   border-radius: 5px 5px 0px 0px;
   font-size: 4em;
-  font-weight: 800;
   background-color: #220E33;
   margin-block-start: 0em;
   margin-block-end: 0em;
@@ -1047,9 +1075,11 @@ ___________________________________________ */
      grid-row: 3 / span 2;
    }
 
-   .product-text {
+   /* -------------- Cable -------------- */
+
+   .product-text-cable {
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(3, 1.2fr);
      grid-template-rows: auto;
      background-color: #f6e27f;
      font-family: Lexend;
@@ -1057,9 +1087,10 @@ ___________________________________________ */
      margin-block-start: 0em;
      margin-block-end: 0em;
      padding-bottom: 1em;
+     text-align: left;
    }
 
-   .product-text h3 {
+   .product-text-cable h3 {
     font-size: 6em;
     grid-column: 1 / span 3;
     grid-row: 1;
@@ -1068,8 +1099,8 @@ ___________________________________________ */
     margin-left: .3em;
    }
 
-   .product-text h4 {
-    font-size: 4em;
+   .product-text-cable h4 {
+    font-size: 3em;
     grid-column: 1 / span 3;
     grid-row: 2;
     word-spacing: 1em;
@@ -1078,17 +1109,16 @@ ___________________________________________ */
     margin: .2em .5em .3em;
   }
 
-  .product-text h5 {
+  .product-text-cable p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.5em;
-    grid-column: 1 / span 2;
-    grid-row: 3;
-    margin-block-start: inherit;
-    margin-block-end: inherit;
-    margin: 1em 1.5em 1em;
+   font-size: 1.5em;
+   grid-column: 1 / span 2;
+   margin-block-start: inherit;
+   margin-block-end: inherit;
+   margin: 1em 1.5em 1em;
   }
 
-  .product-text button {
+  .product-text-cable button {
     font-size: 6em;
     text-align: center;
     background-color: inherit;
@@ -1097,9 +1127,69 @@ ___________________________________________ */
     grid-row: 3;
   }
 
-  .product-text button:hover {
+  .product-text-cable button:hover {
     color: #220E33;
   }
+
+  /* -------------- Audio -------------- */
+
+  .product-text-audio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    background-color: #f6e27f;
+    font-family: Lexend;
+    color: black;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 1em;
+    text-align: left;
+  }
+
+  .product-text-audio h3 {
+   font-size: 4em;
+   grid-column: 1 / span 3;
+   margin-block-start: inherit;
+   margin-block-end: inherit;
+   margin: .2em .3em;
+  }
+
+  .product-text-audio h4 {
+   font-size: 3em;
+   grid-column: 1 / span 3;
+   margin-block-start: inherit;
+   margin-block-end: inherit;
+   margin: .2em .5em .3em;
+ }
+
+ .product-text-audio h5 {
+  font-size: 2em;
+  grid-column: 1 / span 3;
+  margin-block-start: inherit;
+  margin-block-end: inherit;
+  margin: .2em .8em .3em;
+}
+
+ .product-text-audio p {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 1.5em;
+   grid-column: 1 / span 2;
+   margin-block-start: inherit;
+   margin-block-end: inherit;
+   margin: 1em 1.5em 1em;
+ }
+
+ .product-text-audio button {
+   font-size: 6em;
+   text-align: center;
+   background-color: inherit;
+   border-style: none;
+   grid-column: 3;
+ }
+
+ .product-text-audio button:hover {
+   color: #220E33;
+ }
 
   .triangle {
     width: 0;

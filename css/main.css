@@ -107,11 +107,12 @@ ___________________________________________ */
 
   span {
     display: inline-block;
-    vertical-align: middle;
     line-height: normal;
   }
 
   .middle {
+    display: block;
+    margin: auto;
     justify-content: center;
   }
 
@@ -145,6 +146,9 @@ ___________________________________________ */
     margin: 6em auto auto auto;
   }
 
+  .link:hover {
+    color: #1C0C26;
+  }
 
 
 /* -------------- Hero Image things -------------- */
@@ -949,9 +953,29 @@ ___________________________________________ */
    }
 
    .banner-text h3 {
-    display: grid;
      font-family: Lexend;
      font-size: 6em;
+     color: white;
+     text-align: center;
+     justify-self: center;
+     margin: 0em auto;
+   }
+
+   .banner-text h4 {
+     font-family: Lexend;
+     font-size: 3em;
+     font-weight: 700;
+     color: white;
+     text-align: center;
+     justify-self: center;
+     margin: 0em auto;
+   }
+
+   .banner-text h5 {
+    display: grid;
+     font-family: Lexend;
+     font-size: 2em;
+     font-weight: 200;
      color: white;
      text-align: center;
      justify-self: center;
@@ -1077,5 +1101,13 @@ ___________________________________________ */
     color: #220E33;
   }
 
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 35px solid #f6e27f;
+    margin: 3em auto;
+  }
 
   }

@@ -492,7 +492,7 @@ ___________________________________________ */
 
     .site{
       max-width: none;
-      background-image: url(/images/ECS_wallpaper_short.jpg);
+      background-image: url(../images/ECS_wallpaper_short.jpg);
       background-size: 50%;
       background-repeat: repeat;
    }

@@ -13,7 +13,7 @@ All you need is to clone the project into a folder of your choosing and launch i
 
 ### Credits
 
-Built with
+<h2>Built with</h2>
 <br>
 VS Code
 <br>

@@ -65,10 +65,28 @@ with features and plans I want to implement. So here is my basic but hopefully u
     <main id="content">
         <!--Introducing the website and what it's all about-->
         <section>
-            <h3 class="hidden">Website Introduction</h3>
-                <!--These photos haven't been taken yet so forgive the placeholder names-->
-            <img src="images/coolDesktop_1.jpg" alt="A photo of a desktop PC">
-            <img src="images/coolDesktop_2.jpg" alt="Another photo of a desktop PC">
+            <h2 class="hidden">Website Introduction</h3>
+                <div class="hero-container">
+                    <!--These photos haven't been taken yet so forgive the placeholder names-->
+                    <div class="left-hero">
+                        <div class="hero-img-1">
+                            <img class="round-pics left-image" src="images/coolDesktop_1.jpg" alt="A photo of a desktop PC">
+                                <div class="hero-text-left">
+                                    <h4>Desktops</h4>
+                                    <h5>No Gods or Kings, only machine</h5>
+                                </div>
+                        </div>       
+                    </div>
+                    <div class="right-hero">
+                        <div class="hero-img-2">
+                            <img class="round-pics right-image" src="images/coolDesktop_2.jpg" alt="Another photo of a desktop PC">
+                            <div class="hero-text-right">
+                                <h4>Reviews</h4>
+                                <h5>Who can stand the test?</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <p>
             Welcome to Evan's Computer Shop: serving smiling faces since 2021! Enjoy our limited selection of high quality goods and services.
             </p>
@@ -89,7 +107,7 @@ with features and plans I want to implement. So here is my basic but hopefully u
         <!--Laptop section cause laptops are cool-->
         <section>
             <h3 class="hidden">Laptops and Hardware</h3>
-            <img src="images/laptop.jpg" alt="Photo of a laptop">
+            <!-- <img src="images/laptop.jpg" alt="Photo of a laptop"> -->
             <p> Hello here are our wonderful laptops to suit your every need. We have business and g a m e r </p>
             <img src="images/laptop_buisness" alt="A photo of a typical buisness laptop. Think Ideapad">
             <img src="images/laptop_gamer" alt="A photo of a typical gamer laptop. Think red lights and obtuse logos">
@@ -114,8 +132,16 @@ with features and plans I want to implement. So here is my basic but hopefully u
                     <img src="images/discord.png" alt="discord">
                 </div>
             </div>
-            <div class="sub-header footer-box right-foot">
-                <p class="sub-header">Get the latest news from our <br>newsletter!</p>
+            <div class="two-items-vert right-foot">
+                <p class="sub-header footer-box">Get the latest news from our <br>newsletter!</p>
+                <div class="">
+                    <input type="text" name="email" placeholder="Email Address" class="email">
+                    <button type="button" class="button">
+                        <p class="send">
+                            SIGN UP
+                        </p>
+                    </button>
+                </div>
             </div>
         </div>
     </section>

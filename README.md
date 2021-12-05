@@ -30,5 +30,4 @@ Git
 made with love <3
 
 ### License 
-Made by: Evan Hansen
-LL Cool J 2021
+Made by Evan Hansen

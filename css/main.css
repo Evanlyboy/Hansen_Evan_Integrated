@@ -4,6 +4,8 @@ Description: Class File
 Author: Evan Hansen 
 Version: 1.0
 Tags: Learning CSS
+
+This is a big ol mess
 */
 
 /* -------------
@@ -71,9 +73,13 @@ ___________________________________________ */
 /* 01. General Styles  
     - Hero Image
       - Left Hero
-      - Right Hero                      
+      - Right Hero   
+      - Welcome
+      - Intro                   
    02. CSS Grid  
    03. Site Header
+      - Nav Styling
+      - Subheader
       - Site Footer
    04. Hero               
 /* _____________________________________
@@ -92,14 +98,12 @@ ___________________________________________ */
     font-family: "Lexend", sans-serif, px;
   }
 
-
   body {
     margin: 0;
     padding: 0;
     font-family: Trebuchet MS;
     font-size: 16px;  
   }
-
 
   span {
     display: inline-block;
@@ -114,6 +118,27 @@ ___________________________________________ */
   .margin-2 {
     margin: 2em auto;
     max-width: fit-content;
+  }
+
+  .hero-margin {
+    margin: auto auto 10em auto;
+    max-width: fit-content;
+  }
+
+  .image-block {
+    display: grid;
+    grid-column: span 1;
+    max-width: fit-content;
+  }
+
+  .image-block img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .common-box {
+    margin: 2em;
+    padding: 2em;
   }
 
 
@@ -133,7 +158,7 @@ ___________________________________________ */
   display: grid;
   grid-column: 2 / span 2;
   grid-template-columns: repeat(2, 1fr);
-  max-height: 704px;
+  /* max-height: 704px; */
   overflow: hidden;
 }
 
@@ -141,7 +166,7 @@ ___________________________________________ */
   display: grid;
   grid-column: 1 / span 2;
   grid-template-columns: repeat(1, 1fr);
-  max-height: 704px;
+  /* max-height: 704px; */
   overflow: hidden;
 }
 
@@ -185,7 +210,7 @@ ___________________________________________ */
 }
 
 /* -------------- Left Hero -------------- */
-.left-hero {
+.hero-assigner {
   grid-column: 1;
   display: grid;
 }
@@ -274,6 +299,7 @@ ___________________________________________ */
   margin-block-end: 0em;
 }
 
+/* -------------- Welcome -------------- */
 .welcome {
   display: grid;
   background-color: #F9E26E;
@@ -327,6 +353,8 @@ ___________________________________________ */
   margin-top: .5em;
   margin-bottom: .5em;
 }
+
+/* -------------- Intro -------------- */
 
 .intro {
   display: grid;
@@ -457,8 +485,6 @@ ___________________________________________ */
       column-gap: 2em;
    }
 
-    /* -------------- End Grid Items -------------- */
-
     /* _____________________________________
 
    03. Site Header
@@ -511,8 +537,6 @@ ___________________________________________ */
    }
 
     /*------------ Start Nav Styling ------------*/
-
-      /* This is very nice */
 
     .nav {
         grid-column: 2 / span 3;
@@ -580,64 +604,69 @@ ___________________________________________ */
       text-align: justify;
    }
 
-   .search {
-    grid-column: 4 / span 1;
-    border-radius: 10px;
-    float: left;
-    background: #e8e6f0;
-    width: 12em;
-    vertical-align: middle;
-   }
+    .search {
+      grid-column: 4 / span 1;
+      border-radius: 10px;
+      float: left;
+      background: #e8e6f0;
+      width: 12em;
+      vertical-align: middle;
+    }
 
-   .search-icon {
-     background-color: #fff;
-   }
+    .search-icon {
+      background-color: #fff;
+    }
 
-   input[type=text].icon {
-    width: 15%;
-    padding: 12px 25px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c6/Search_font_awesome.svg");
-    background-size: 10%;
-    background-position: 10px 8px;
-    background-repeat: no-repeat;
-    padding-left: 48px;
-  }
+    input[type=text].icon {
+      width: 15%;
+      padding: 12px 25px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: white;
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c6/Search_font_awesome.svg");
+      background-size: 10%;
+      background-position: 10px 8px;
+      background-repeat: no-repeat;
+      padding-left: 48px;
+    }
 
-  input[type=text].email {
-    width: 70%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    font-size: 24px;
-    background-color: white;
-    padding-left: 42px;
-  }
+    input[type=text].email {
+      width: 70%;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 24px;
+      background-color: white;
+      padding-left: 42px;
+    }
 
-  .send  {
-    color: #170A1E;
-    text-align: center;
-    font-family: Lexend;
-    font-size: 24px;
-    font-weight: 400;
-    margin: auto;
-  }
+    input[type=text].pc-form {
+      padding: 6px 10px;
+      box-sizing: border-box;
+      border-radius: 4px;
+      font-size: 1em;
+      background-color: white;
+      padding-left: 2em;
+      margin: 1em 0em;
+    }
 
-  .button {
-    background-color: #F9E26E;
-    padding: 1em 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-style: none;
-    border-radius: 20px;
-  }
+    .button {
+      background-color: #F9E26E;
+      padding: .5em 1.5em;
+      border-style: none;
+      border-radius: 10px;
+      color: #170A1E;
+      text-align: center;
+      font-family: Lexend;
+      font-size: 24px;
+      font-weight: 400;
+      margin: auto .5em;
+    }
 
-  .button:active {
-    background-color: #948955;
-  }
+    .button:active {
+      background-color: #948955;
+    }
 
     /* -------------- Footer -------------- */
 
@@ -733,17 +762,149 @@ ___________________________________________ */
 
     /* _____________________________________
 
-   04. IT Services
+   04. Parts
    _____________________________________ */
 
-   .image-block {
-     display: grid;
-     grid-column: span 1;
-     max-width: fit-content;
-   }
+    .pb-text {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 2.1em;
+    }
 
-   .image-block img{
-     display: block;
-     margin: 0 auto;
-   }
+    .pb-text-smol {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.9em;
+    }
+
+    .pb-border {
+      margin: auto 2em;
+    }
+
+    .image-justify {
+      justify-self: left;
+      margin: 4em;
+    }
+
+    .image-right {
+      display: grid;
+      grid-column: 4;
+    }
+
+    .image-size {
+      max-width: 70%;
+      height: auto;
+    }
+
+     /* -------------- Right Part Box -------------- */
+    .right-part-box {
+      display: grid;
+      grid-column: 2 / span 3;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 2em;
+      padding: 2em;
+      background-color: #402d7f;
+      justify-self: auto;
+    }
+
+    .right-text-rpb {
+      grid-column: 2;
+      margin: 0 .5em;
+    }
+
+    .right-text-rpb li {
+      padding-bottom: .7em;
+      color: #f6e27f;
+      text-decoration: underline;
+    }
+
+    .right-text-rpb a {
+      color: #f6e27f;
+    }
+
+    .left-text-rpb {
+      grid-column: 1;
+      border-right: .2em solid black;
+      padding-right: 1em;
+    }
+
+     /* -------------- Left Part Box -------------- */
+
+     .left-part-box {
+      display: grid;
+      grid-column: 1 / span 3;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row: 1;
+      margin: 2em;
+      padding: 2em;
+      background-color: #402d7f;
+      justify-self: auto;
+    }
+
+    .left-text-lpb {
+      grid-column: 1;
+      grid-row: 1;
+      margin: 0 .5em;
+    }
+
+    .left-text-lpb li {
+      padding-bottom: .7em;
+      color: #f6e27f;
+      text-decoration: underline;
+    }
+
+    .left-text-lpb a {
+      color: #f6e27f;
+    }
+
+    .right-text-lpb {
+      grid-column: 2;
+      border-left: .2em solid black;
+      padding-left: 1em;
+    }
+
+    /* -------------- PC Complete -------------- */
+
+    .pc-header {
+      display: grid;
+      grid-column: 1 / span 2;
+      border-bottom: .2em solid black;
+      margin: .2em 2em auto;
+      max-height: 150px;
+    }
+
+    .pc-left {
+      display: grid;
+      grid-column: 1;
+      grid-row: 2;
+      border-right: .2em solid black;
+      padding: 1em;
+    }
+
+    .pc-left li {
+      padding-bottom: .7em;
+    }
+
+    .pc-right {
+      display: grid;
+      grid-column: 2;
+      grid-row: 2;
+      margin: 1em 5em 0em .5em;
+    }
+
+    .pc-right h3 {
+      font-family: Lexend;
+      font-weight: 500;
+      font-size: 4em;
+      text-align: center;
+      margin: auto;
+    }
+
+    .pc-right p {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .span-three {
+      grid-column: 2 / span 3;
+    }
+
   }

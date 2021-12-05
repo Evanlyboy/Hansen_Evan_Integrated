@@ -66,9 +66,9 @@ with features and plans I want to implement. So here is my basic but hopefully u
     <main id="content">
         <!--Introducing the website and what it's all about-->
         <section>
-            <h2 class="hidden">Website Introduction</h3>
+            <h2 class="hidden">Website Introduction</h2>
                 <div class="hero-container-split">
-                    <div class="left-hero">
+                    <div class="hero-assigner">
                         <div class="span-img">
                             <img class="round-pics left-image" src="images/coolDesktop_1.jpg" alt="A photo of a desktop PC">
                                 <div class="hero-text-left">
@@ -133,6 +133,7 @@ with features and plans I want to implement. So here is my basic but hopefully u
                         <i class="fas fa-star"></i>
                         <p>"Five Stars" <br> -Steve</p>
                     </div>
+                </div>
             </div>
         </section>
 
@@ -166,7 +167,7 @@ with features and plans I want to implement. So here is my basic but hopefully u
             <h2 class="hidden">Laptops and Hardware</h2>
             <div>
                 <div class="hero-container">
-                    <div class="left-hero">
+                    <div class="hero-assigner">
                         <div class="span-img">
                             <img class="round-pics left-image" src="images/laptop.jpg" alt="Photo of a laptop">
                             <div class="hero-text">
@@ -190,37 +191,36 @@ with features and plans I want to implement. So here is my basic but hopefully u
             </div>
         </section>
     </main>
-</body>
 
-<!--Here is the footer of the website-->
-<!--The validator says this footer is a stray but as you can see it isn't-->
-<footer class="footer">
-    <section>
-        <h2 class="hidden">ECS Site Footer</h2>
-        <div class="two-items">
-            <div class="two-items-vert left-foot">
-                <div class="sub-header footer-box">
-                    <p class="follow">Follow us online</p>
+
+    <!--Here is the footer of the website-->
+    <!--The validator says this footer is a stray but as you can see it isn't-->
+    <footer class="footer">
+        <section>
+            <h2 class="hidden">ECS Site Footer</h2>
+            <div class="two-items">
+                <div class="two-items-vert left-foot">
+                    <div class="sub-header footer-box">
+                        <p class="follow">Follow us online</p>
+                    </div>
+                    <div class="socials four-items">
+                        <img src="images/facebook.png" alt="facebook">
+                        <img src="images/instagram.png" alt="instagram">
+                        <img src="images/twitter.png" alt="twitter">
+                        <img src="images/discord.png" alt="discord">
+                    </div>
                 </div>
-                <div class="socials four-items">
-                    <img src="images/facebook.png" alt="facebook">
-                    <img src="images/instagram.png" alt="instagram">
-                    <img src="images/twitter.png" alt="twitter">
-                    <img src="images/discord.png" alt="discord">
+                <div class="two-items-vert right-foot">
+                    <p class="sub-header footer-box">Get the latest news from our <br>newsletter!</p>
+                    <div class="">
+                        <input type="text" name="email" placeholder="Email Address" class="email">
+                        <button type="button" class="button">
+                                SIGN UP
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="two-items-vert right-foot">
-                <p class="sub-header footer-box">Get the latest news from our <br>newsletter!</p>
-                <div class="">
-                    <input type="text" name="email" placeholder="Email Address" class="email">
-                    <button type="button" class="button">
-                        <p class="send">
-                            SIGN UP
-                        </p>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
+        </section>
+    </footer>
+</body>
 </html>

@@ -1,4 +1,4 @@
-<img src="images/ECS_logo_smol.jpg">
+<img src="images/ECS_logo_smol.png">
 
 <h1> Evan's Computer Shop | ECS </h1>
 

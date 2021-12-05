@@ -14,13 +14,19 @@ All you need is to clone the project into a folder of your choosing and launch i
 ### Credits
 
 Built with
+<br>
 VS Code
+<br>
 Adobe Photoshop 2022
+<br>
 Adobe Illustrator 2022
+<br>
 Vivaldi
+<br>
 My Mom's trusty Sony A100
+<br>
 Git
-
+<br>
 made with love <3
 
 ### License 

@@ -868,7 +868,8 @@ ___________________________________________ */
 
     .right-text-rpb {
       grid-column: 2;
-      margin: 0 .5em;
+      border-left: .2em solid black;
+      margin: auto .5em;
     }
 
     .right-text-rpb li {
@@ -883,8 +884,8 @@ ___________________________________________ */
 
     .left-text-rpb {
       grid-column: 1;
-      border-right: .2em solid black;
       padding-right: 1em;
+      margin: auto;
     }
 
      /* -------------- Left Part Box -------------- */
@@ -903,7 +904,8 @@ ___________________________________________ */
     .left-text-lpb {
       grid-column: 1;
       grid-row: 1;
-      margin: 0 .5em;
+      border-right: .2em solid black;
+      margin: auto .5em;
     }
 
     .left-text-lpb li {
@@ -918,8 +920,8 @@ ___________________________________________ */
 
     .right-text-lpb {
       grid-column: 2;
-      border-left: .2em solid black;
       padding-left: 1em;
+      margin: auto;
     }
 
     /* -------------- PC Complete -------------- */
@@ -1027,12 +1029,13 @@ ___________________________________________ */
 
    .controller-style {
     display: grid;
+    grid-template-rows: 5em;
     background-color: #402d7f;
     padding: 2em 0em 0em .5em;
    }
 
    .controller-style p {
-    font-size: 2em;
+    font-size: 2.1em;
     margin: 0em;
    }
    
